@@ -69,5 +69,5 @@ fastlane/test_output
 
 # Configuration
 
-ShiftPlanningAPI/Sources/Config.swift
-ClipCardAPI/Sources/Config.swift
+ShiftPlanningAPI/**/Sources/Config
+ClipCardAPI/**/Sources/Config
