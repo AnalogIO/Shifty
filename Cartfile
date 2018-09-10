@@ -1,0 +1,3 @@
+github "Alamofire/Alamofire" ~> 4.7
+github "bignerdranch/Freddy" ~> 3.0
+github "danielgindi/Charts" ~> 3.1.1
