@@ -43,7 +43,7 @@ class DatePickerTableViewCell: UITableViewCell {
         return datePicker
     }()
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         configureViews()
         datePicker.addTarget(self, action: #selector(datePickerValueChanged), for: .valueChanged)

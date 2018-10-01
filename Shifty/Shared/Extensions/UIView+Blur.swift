@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIView {
-    func addBlurEffect(effect style: UIBlurEffectStyle) {
+    func addBlurEffect(effect style: UIBlurEffect.Style) {
         let blurEffect = UIBlurEffect(style:style)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)
         blurEffectView.frame = self.bounds

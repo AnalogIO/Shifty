@@ -31,7 +31,7 @@ class MasterViewController: UIViewController {
     
     fileprivate lazy var addShiftButton: UIBarButtonItem = {
         let button = UIBarButtonItem(
-            barButtonSystemItem: UIBarButtonSystemItem.add,
+            barButtonSystemItem: UIBarButtonItem.SystemItem.add,
             target: self,
             action: #selector(didPressAddShift))
         return button
@@ -96,7 +96,7 @@ class MasterViewController: UIViewController {
         activityIndicator.heightAnchor.constraint(equalToConstant: 100).isActive = true
         activityIndicator.widthAnchor.constraint(equalToConstant: 100).isActive = true
         
-        view.bringSubview(toFront: activityIndicator)
+        view.bringSubviewToFront(activityIndicator)
     }
     
     @objc func didPressAddShift(sender: UIBarButtonItem) {

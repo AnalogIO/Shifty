@@ -44,7 +44,7 @@ class DetailViewController: UIViewController {
     
     fileprivate lazy var updateEmployeesButton: UIBarButtonItem = {
         let button = UIBarButtonItem(
-            barButtonSystemItem: UIBarButtonSystemItem.add,
+            barButtonSystemItem: UIBarButtonItem.SystemItem.add,
             target: self,
             action: #selector(didPressAddEmployees))
         return button
@@ -52,7 +52,7 @@ class DetailViewController: UIViewController {
     
     fileprivate lazy var deleteShiftButton: UIBarButtonItem = {
         let button = UIBarButtonItem(
-            barButtonSystemItem: UIBarButtonSystemItem.trash,
+            barButtonSystemItem: UIBarButtonItem.SystemItem.trash,
             target: self,
             action: #selector(didTapDeleteButton))
         return button
@@ -67,7 +67,7 @@ class DetailViewController: UIViewController {
         let tableView = UITableView()
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 140
         tableView.tableFooterView = UIView()
         tableView.register(CheckInTableViewCell.self, forCellReuseIdentifier: CheckInTableViewCell.reuseIdentifier)
@@ -119,7 +119,7 @@ class DetailViewController: UIViewController {
         activityIndicator.heightAnchor.constraint(equalToConstant: 100).isActive = true
         activityIndicator.widthAnchor.constraint(equalToConstant: 100).isActive = true
         
-        view.bringSubview(toFront: activityIndicator)
+        view.bringSubviewToFront(activityIndicator)
     }
     
     public func fetchShift(shiftId: Int) {

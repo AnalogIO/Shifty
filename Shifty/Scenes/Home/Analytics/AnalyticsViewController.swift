@@ -85,7 +85,7 @@ class AnalyticsViewController: UIViewController {
         activityIndicator.heightAnchor.constraint(equalToConstant: 100).isActive = true
         activityIndicator.widthAnchor.constraint(equalToConstant: 100).isActive = true
         
-        view.bringSubview(toFront: activityIndicator)
+        view.bringSubviewToFront(activityIndicator)
     }
 }
 

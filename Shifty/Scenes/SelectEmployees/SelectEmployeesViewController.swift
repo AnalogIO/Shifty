@@ -32,7 +32,7 @@ class SelectEmployeesViewController: UIViewController {
     
     fileprivate lazy var doneButton: UIBarButtonItem = {
         let button = UIBarButtonItem(
-            barButtonSystemItem: UIBarButtonSystemItem.done,
+            barButtonSystemItem: UIBarButtonItem.SystemItem.done,
             target: self,
             action: #selector(didPressDoneButton))
         return button
@@ -40,7 +40,7 @@ class SelectEmployeesViewController: UIViewController {
     
     fileprivate lazy var cancelButton: UIBarButtonItem = {
         let button = UIBarButtonItem(
-            barButtonSystemItem: UIBarButtonSystemItem.cancel,
+            barButtonSystemItem: UIBarButtonItem.SystemItem.cancel,
             target: self,
             action: #selector(didPressCancelButton))
         return button

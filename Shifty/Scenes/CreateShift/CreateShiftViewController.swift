@@ -31,7 +31,7 @@ class CreateShiftViewController: UIViewController {
     
     fileprivate lazy var doneButton: UIBarButtonItem = {
         let button = UIBarButtonItem(
-            barButtonSystemItem: UIBarButtonSystemItem.done,
+            barButtonSystemItem: UIBarButtonItem.SystemItem.done,
             target: self,
             action: #selector(didPressDoneButton))
         return button
@@ -39,7 +39,7 @@ class CreateShiftViewController: UIViewController {
     
     fileprivate lazy var cancelButton: UIBarButtonItem = {
         let button = UIBarButtonItem(
-            barButtonSystemItem: UIBarButtonSystemItem.cancel,
+            barButtonSystemItem: UIBarButtonItem.SystemItem.cancel,
             target: self,
             action: #selector(didPressCancelButton))
         return button
@@ -54,7 +54,7 @@ class CreateShiftViewController: UIViewController {
         let tableView = UITableView()
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 250
         tableView.tableFooterView = UIView()
         tableView.register(SelectEmployeesCell.self, forCellReuseIdentifier: SelectEmployeesCell.reuseIdentifier)
@@ -108,7 +108,7 @@ class CreateShiftViewController: UIViewController {
         activityIndicator.heightAnchor.constraint(equalToConstant: 100).isActive = true
         activityIndicator.widthAnchor.constraint(equalToConstant: 100).isActive = true
         
-        view.bringSubview(toFront: activityIndicator)
+        view.bringSubviewToFront(activityIndicator)
     }
     
     @objc func didPressDoneButton(sender: UIBarButtonItem) {

@@ -11,7 +11,7 @@ import UIKit
 public class FDCActivityIndicator: UIView {
     
     private lazy var activityIndicator: UIActivityIndicatorView = {
-        let view = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.whiteLarge)
+        let view = UIActivityIndicatorView(style: UIActivityIndicatorView.Style.whiteLarge)
         view.color = .black
         view.hidesWhenStopped = true
         view.contentMode = .scaleToFill
