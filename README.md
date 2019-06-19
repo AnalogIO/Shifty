@@ -1,5 +1,7 @@
 # Shifty
 
+Architecture: Clean Swift
+
 ## Setup
 
 1. Clone repository
